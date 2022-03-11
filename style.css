@@ -39,14 +39,14 @@ main {
 }
 
 .left {
-  width: 52rem;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .right {
-  width: 52rem;
+
   font-size: 2rem;
 }
 
@@ -123,9 +123,6 @@ h1 {
   background-color: #ccc;
 }
 
-.message {
-
-}
 
 .label-score {
   margin-bottom: 2rem;
