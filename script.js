@@ -8,8 +8,8 @@ const guessElement = document.querySelector(".guess");
 const checkBtn = document.querySelector(".check");
 const againBtn = document.querySelector(".again");
 
-let secretNumber = parseInt(Math.random() * 20 + 1);
-let score = 20;
+let secretNumber = parseInt(Math.random() * 30 + 1);
+let score = 30;
 let didEnd = false;
 let guesses = [];
 
@@ -46,8 +46,8 @@ function checkInput() {
     return;
   }
 
-  if (guess <= 0 || guess > 20) {
-    setScreen("🚫 Numaram 1 ile 20 arasında!");
+  if (guess <= 0 || guess > 30) {
+    setScreen("🚫 Numaram 1 ile 30 arasında!");
   }
 
   if (guess === secretNumber) {
@@ -58,28 +58,28 @@ function checkInput() {
     return;
   }
 
-  if (guess < secretNumber && guess <= 20 && guess >= 1 && score > 1) {
+  if (guess < secretNumber && guess <= 30 && guess >= 1 && score > 1) {
     guesses.push(guess);
     score--;
     setScreen("📉 Çok düşük!");
     return;
   }
 
-  if (guess < secretNumber && guess <= 20 && guess >= 1 && score === 1) {
+  if (guess < secretNumber && guess <= 30 && guess >= 1 && score === 1) {
     guesses.push(guess);
     score = 0;
     setScreen("😢 Kaybettin!", true);
     return;
   }
 
-  if (guess > secretNumber && guess <= 20 && guess >= 1 && score > 1) {
+  if (guess > secretNumber && guess <= 30 && guess >= 1 && score > 1) {
     guesses.push(guess);
     score--;
     setScreen("📈 Çok yüksek!");
     return;
   }
 
-  if (guess > secretNumber && guess <= 20 && guess >= 1 && score === 1) {
+  if (guess > secretNumber && guess <= 30 && guess >= 1 && score === 1) {
     guesses.push(guess);
     score = 0;
     setScreen("😢 Kaybettin!", true);
@@ -89,9 +89,9 @@ function checkInput() {
 
 function resetGame() {
   guessElement.value = "";
-  secretNumber = parseInt(Math.random() * 20 + 1);
+  secretNumber = parseInt(Math.random() * 30 + 1);
   number.textContent = "?";
-  score = 20;
+  score = 30;
   guesses = [];
   document.querySelector("body").classList.remove("won");
 
