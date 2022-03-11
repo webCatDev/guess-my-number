@@ -131,13 +131,15 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.right>*{
+    margin:2rem 0 ;
+  }
+
 @media(max-width:768px){
   main{
     text-align: center;
     flex-direction: column;
   }
 
-  .right>*{
-    margin:2rem 0 ;
-  }
+  
 }
