@@ -23,8 +23,14 @@ body.won{
   background-color: #60b347;
 }
 
+.container{
+ width: 80%;
+  margin: 0 auto;
+}
+
 /* LAYOUT */
 header {
+ 
   padding:20rem 0  ;
   position: relative;
   border-bottom: 7px solid #eee;
