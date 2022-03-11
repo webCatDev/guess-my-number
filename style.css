@@ -7,8 +7,8 @@
 }
 
 html {
-  font-size: 62.5%;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body {
@@ -133,6 +133,10 @@ h1 {
   }
 
 @media(max-width:768px){
+ html{
+   font-size: 55%;
+ }
+
   main{
     text-align: center;
     flex-direction: column;
